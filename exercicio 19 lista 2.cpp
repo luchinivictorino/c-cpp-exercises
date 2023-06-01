@@ -1,0 +1,27 @@
+/*19. A granja Frangotech possui um controle automatizado de cada frango da sua produção. No
+pé direito do frango há um anel com um chip de identificação; no pé esquerdo são dois anéis
+para indicar o tipo de alimento que ele deve consumir. Sabendo que o anel com chip custa
+R$4,00 e o anel de alimento custa R$3,50, faça um algoritmo para calcular o gasto total da
+granja para marcar todos os seus frangos.*/
+
+#include<conio.h>
+#include<stdio.h>
+#include<locale.h>
+#include<iostream>
+
+int NumeroFrango,AnelDireito,AnelEsq;
+float CustoTotal;
+
+main(){
+	setlocale(LC_ALL,"portuguese");
+	system("cls");
+	
+	printf("\n Insira o número de frangos: ",NumeroFrango);
+	scanf("%i",&NumeroFrango);
+	
+	AnelDireito = 4.00;
+	AnelEsq = 3.50;
+	CustoTotal = NumeroFrango * AnelDireito * (2 * AnelEsq);
+	
+	printf("\n O gasto total será de: %.2f reais",CustoTotal);
+}
